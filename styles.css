@@ -6,12 +6,29 @@ body {
 }
 
 .main {
-  margin: 50px auto;
+  margin: 50px;
   width: 400px;
   height: 300px;
   background-color: #fff;
   color: #000;
   border-radius: 15px;
+  float: left;
+}
+
+.main2 {
+  background-color: chartreuse;
+}
+
+.main3 {
+  background-color: coral;
+}
+
+.main4 {
+  background-color: darkorchid;
+}
+
+.main5 {
+  background-color: darkolivegreen;
 }
 
 .header {
