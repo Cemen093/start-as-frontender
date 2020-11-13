@@ -1,9 +1,9 @@
 class Countdown {
-  constructor (shift) {
+  constructor (shift, id) {
     this.shift = shift;
     this.startTime = Date.now();
-    this.endTime = (new Date(this.startTime + shift * 3.6e6)).getTime();
-    this.counter = document.getElementById('countdown');
+    this.endTime = this.startTime + shift * 3.6e6;
+    this.counter = document.getElementById(id);
     this.start();
   }
   
@@ -27,5 +27,9 @@ class Countdown {
 }
 
 window.onload = () => {
-  const cd = new Countdown(12);
+  const cd1 = new Countdown(12, "s1");
+  const cd2 = new Countdown(16, "s2");
+  const cd3 = new Countdown(02, "s3");
+  const cd4 = new Countdown(23, "s4");
+  const cd5 = new Countdown(01, "s5");
 };
